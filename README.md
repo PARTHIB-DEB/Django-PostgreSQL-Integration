@@ -27,6 +27,7 @@ Now switch to the newly created database
   \c db_name
 ```
 :exclamation: :exclamation: **Under the new database db_name**
+
 *First of all , we have to create a new schema inside the new database*
 ```bash
   CREATE SCHEMA schema_name AUTHORIZATION username
