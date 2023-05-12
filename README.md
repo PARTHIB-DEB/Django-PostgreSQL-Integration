@@ -15,7 +15,7 @@ For benificial purposes , keep the contents of the current project folder outsid
 ```
 In PSQL shell------
 
-**Under the postgres (parent database) database**
+:caution: :caution: **Under the postgres (parent database) database**
 ```bash
   CREATE DATABASE db_name;
 ```
@@ -26,7 +26,7 @@ Now switch to the newly created database
 ```bash
   \c db_name
 ```
-**Under the new database db_name**
+:caution: :caution: **Under the new database db_name**
 First of all , we have to create a new schema inside the new database
 ```bash
   CREATE SCHEMA schema_name AUTHORIZATION username
@@ -46,7 +46,7 @@ Now  we have to provide the *search_path* for the new database
 ```bash
   ALTER ROLE username IN DATABASE db_name set search_path=schema_name ;
 ```
-**Again and finally , inside the SETTINGS.PY**
+:caution: :caution: **Inside the SETTINGS.PY** of the django PROJECT folder
 ```bash
     DATABASES = {
     'default': {
