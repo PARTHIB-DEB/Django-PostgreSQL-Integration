@@ -32,7 +32,7 @@ Now switch to the newly created database
 ```bash
   CREATE SCHEMA schema_name AUTHORIZATION username
 ```
-Then, we have to apply some commands to set the slient-encoding parameter , timezone etc
+Then, we have to apply some commands to set the client-encoding parameter , timezone etc
 https://docs.djangoproject.com/en/4.2/ref/databases/#postgresql-notes 
 
 (In future this docs may be invalid deu to upgraded versions of django)
