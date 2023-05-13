@@ -1,4 +1,4 @@
-# DJ-Postgre-cheatsheet
+# DJ-Postgres-cheatsheet
 **In this Readme file , you will learn how to integrate a django server to a Postgresql server. For this we have to set the attributes of the POSTGRESQL database engine, so let's start**
 
 Installing *psycopg2* ( an adapter to connect to postgresql with any sql supported backend server )
