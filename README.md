@@ -70,6 +70,7 @@ Now we have to *migrate* all the tables to our postgres database
   python manage.py migrate
 ```
 To see the changes and the default django tables inside the Postgre database , *RESTART* the Psql shell and
+Enter Into the new database from root (Not from parent database 'postgres' ,  just when you start - write db_name, username, password and enter)
 ```
   \dt
 ```
