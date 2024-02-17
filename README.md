@@ -3,11 +3,7 @@
 
 **Installing *psycopg* ( an adapter to connect postgresql with any sql supported backend server )**
 
-**Psycopg2 (Don't use so much because going to be deprecated)**
-```bash
-  pip install psycopg2
-```
-**Greater than psycopg2 (For current versions at your time - 2023 (psycopg3))**
+**This gives the updated version of Psycopg Driver**
 ```bash
   pip install psycopg[binary,pool]
 ```
