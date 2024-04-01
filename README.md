@@ -56,6 +56,13 @@ Now  we have to provide the *search_path* for the new database
 ```bash
   ALTER ROLE username IN DATABASE db_name set search_path=schema_name ;
 ```
+```bash
+  \c postgres
+```
+Now we have to provide all priviledges to our new db (Under **postgres**)
+```bash
+  GRANT ALL PRIVILEGES ON DATABASE database TO username;
+```
 :exclamation: :exclamation: **Inside the SETTINGS.PY** of the django PROJECT folder
 ```bash
     DATABASES = {
