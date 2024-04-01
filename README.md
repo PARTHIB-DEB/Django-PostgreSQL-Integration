@@ -3,10 +3,15 @@
 
 **Installing *psycopg* ( an adapter to connect postgresql with any sql supported backend server )**
 
-**This gives the updated version of Psycopg Driver**
+**This gives the updated version of Psycopg Driver (For Windows)**
 ```bash
   pip install psycopg[binary,pool]
 ```
+**For Linux Based Distros**
+```bash
+  pip install psycopg2-binary
+```
+
 Now we have to create a DJANGO PROJECT/APP structure , let's do this by these following commands :
 ```bash
   django-admin startproject proj_name
@@ -73,6 +78,25 @@ Now we have to *migrate* all the tables to our postgres database
 ```
 To see the changes and the default django tables inside the Postgre database , *RESTART* the Psql shell and
 Enter Into the new database from root (Not from parent database 'postgres' ,  just when you start - write db_name, username, password and enter)
+
+**For Linux Based Distros**
+```bash
+  sudo -i -u postgres
+
+  psql -h <host> -U <user> -d <database_name>
 ```
+
+```bash
   \dt
+```
+
+**For Linux Based Distros**
+```bash
+  SELECT * FROM SELECT * FROM pg_catalog.pg_tables; (To see all tables in all databases under root user)
+
+  SELECT table_name FROM information_schema.tables
+  WHERE table_name = '<table_name>'; (To see if any table at that name exists)
+
+  SELECT * FROM "table_name" ; (Sometimes without "" , data will not be shown)
+
 ```
