@@ -99,7 +99,7 @@ Enter Into the new database from root (Not from parent database 'postgres' ,  ju
 
 **For Linux Based Distros**
 ```bash
-  SELECT * FROM SELECT * FROM pg_catalog.pg_tables; (To see all tables in all databases under root user)
+  SELECT * FROM pg_catalog.pg_tables; (To see all tables in all databases under root user)
 
   SELECT table_name FROM information_schema.tables
   WHERE table_name = '<table_name>'; (To see if any table at that name exists)
