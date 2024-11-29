@@ -3,7 +3,7 @@
 
 **Installing *psycopg* ( an adapter to connect postgresql with any sql supported backend server )**
 
-**This gives the updated version of Psycopg Driver (For Windows /  For Linux - If You have Python3 (3.10<= Version <=3.11 , Python3.12 doesnot have the support)**
+**This gives the updated version of Psycopg Driver (For Windows /  For Linux - If You have Python3 (Python3.12 may have the support now)**
 ```bash
   pip install psycopg[binary,pool]
 ```
