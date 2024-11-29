@@ -7,10 +7,7 @@
 ```bash
   pip install psycopg[binary,pool]
 ```
-**For Linux Based Distros**
-```bash
-  pip install psycopg2-binary
-```
+**_Psycopg2 is obsolete now !!_**
 
 Now we have to create a DJANGO PROJECT/APP structure , let's do this by these following commands :
 ```bash
