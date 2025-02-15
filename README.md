@@ -104,3 +104,6 @@ Enter Into the new database from root (Not from parent database 'postgres' ,  ju
   SELECT * FROM "table_name" ; (Sometimes without "" , data will not be shown)
 
 ```
+
+### Contribute 🖋️
+If you want to contribute in this repository , Go to the **contribute** branch
